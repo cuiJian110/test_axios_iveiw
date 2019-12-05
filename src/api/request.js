@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-12-03 15:58:59
- * @LastEditTime: 2019-12-05 10:45:40
+ * @LastEditTime: 2019-12-05 15:47:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \testiviewaxios\src\api\request.js
@@ -19,7 +19,8 @@ import {Message} from 'view-design'
 
 // 创建实例
 const instance = axios.create({
-  baseURL: "http://localhost:8080/static/",
+  // http://localhost:3000/getData
+  baseURL: "http://localhost:3000/",
   timeout: 90000,
   // 创建实例这样在请求头中添加属性
   headers: {
@@ -101,6 +102,6 @@ const getRequest = (url, params) => {
     return instance.get(url, {params}).then(res => handleSuccess(res)).catch(err => handleError(err));
 }
 const postRequest = (url, params) => {
-    return instance.post(url, params).then(res => handleSuccess(res.data)).catch(err => handleError(err));
+    return instance.post(url, params).then(res => handleSuccess(res)).catch(err => handleError(err));
 }
 export {getRequest, postRequest};
