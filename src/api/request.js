@@ -1,13 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2019-12-03 15:58:59
- * @LastEditTime: 2019-12-05 10:13:37
+ * @LastEditTime: 2019-12-05 10:45:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \testiviewaxios\src\api\request.js
  */
 import axios from 'axios';
 import QS from 'qs';
+import {Message} from 'view-design'
 // axios.defaults.baseURL = "http://localhost:8080/static/";
 // axios.defaults.timeout = 30000;
 
@@ -85,10 +86,13 @@ instance.interceptors.response.use((response) => {
 
 const handleSuccess = data => {
     // console.log(data);
+    // console.log(iview);
+    Message.success('操作成功');
     return data;
 }
 const handleError = err => {
     // console.log(err);
+    Message.error('操作失败');
     return err;
 }
 // 如果是创建实例的话，就用实例名字 .get

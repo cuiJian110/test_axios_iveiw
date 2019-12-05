@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-12-03 15:53:02
- * @LastEditTime: 2019-12-03 17:40:11
+ * @LastEditTime: 2019-12-05 10:37:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \testiviewaxios\src\pages\home\index.vue
@@ -9,7 +9,7 @@
 <template>
     <div>
         home
-        <button @click="handleGet">testGet</button>
+        <Button @click="handleGet">testGet</Button>
         <button @click="handlePost">testPost</button>
     </div>
 </template>
