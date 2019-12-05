@@ -1,0 +1,125 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-12-03 16:15:52
+ * @LastEditTime: 2019-12-04 11:12:48
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \testiviewaxios\testquchong.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+  //     let   Arr=[
+  //       {$cellEdit: false,
+  //           $index: 0,
+  //           isTrusted: true,
+  //           name: "1",
+  //           sex: "1"},
+  //       {
+  //           $cellEdit: false,
+  //           $index: 1,
+  //           isTrusted: true,
+  //           name: "2",
+  //           sex: "2",
+  //       },{
+  //         $cellEdit: false,
+  //         $index: 2,
+  //         isTrusted: true,
+  //         name: "3",
+  //         sex: "3",
+  //     },{
+  //         $cellEdit: false,
+  //         $index: 3,
+  //         isTrusted: true,
+  //         name: "6",
+  //         sex: "6",
+  //     },{
+  //         $cellEdit: false,
+  //         $index: 4,
+  //         isTrusted: true,
+  //         name: "5",
+  //         sex: "5",
+  //     },{
+  //         $cellEdit: false,
+  //         $index: 3,
+  //         isTrusted: true,
+  //         name: "6",
+  //         sex: "6",
+  //     }
+  //   ]
+  // //   console.log(arr)
+  //   const arrn = Arr.reduce((p,item) => {
+  //     if(p.findIndex(i => i.$index === item.$index) === -1) {
+  //         p.push(item);
+  //     }
+  //     return p;
+  //   },[])
+  //   console.log(arrn)
+  //   const sum = arrn.reduce((p, item) => {
+  //     p += parseInt(item.name);
+  //     return p;
+  //   }, 0)
+  //   console.log(sum)
+  //   const arr_new = [];
+  //   arrn.forEach((item, index) => {
+  //       const obj = {};
+  //       obj.name = item.name;
+  //       obj.sex = item.sex;
+  //       obj.id = index+1;
+  //       arr_new.push(obj);
+  //   })
+  //   console.log(arr_new)
+  let Arr = [
+    {
+      $index: 0,
+      addTime: "2019-12-04 18:50:22",
+      apId: "1186548282058010625",
+      deleteStatus: false,
+      id: "1202057529008930817",
+      ladder: 1,
+      probability: 50
+    },
+    {
+      $index: 1,
+      addTime: "2019-12-04 18:50:22",
+      apId: "1186548282058010625",
+      deleteStatus: false,
+      id: "1202057529021513729",
+      ladder: 1,
+      probability: 20,
+    }, {
+      $index: 2,
+      addTime: "2019-12-04 18:50:22",
+      apId: "1186548282058010625",
+      deleteStatus: false,
+      id: "1202057529029902337",
+      ladder: 1,
+      probability: 30,
+    }
+  ]
+  const obj = {
+    $index: 2,
+    addTime: "2019-12-04 18:50:22",
+    apId: "1186548282058010625",
+    deleteStatus: false,
+    id: "1202057529029902337",
+    ladder: 1,
+    probability: 30
+  }
+  Arr.splice(Arr.findIndex(i => i.$index === obj.$index),1);
+  console.log(Arr);
+
+</script>
