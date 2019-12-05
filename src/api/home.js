@@ -8,3 +8,6 @@
  */
 import {getRequest, postRequest} from './request';
 export const postTest = (url, params) => postRequest(url, params);
+export const getStudents = (url, params) => getRequest(url, params);
+export const addStudent = (url, params) => postRequest(url, params);
+export const delStudent = (url, params) => postRequest(url, params);
